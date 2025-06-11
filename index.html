@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Our Feedback Portal</h1>
+
+    <!-- Embedded Google Form -->
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSc-ePwtOkgU-XNo1_V72ppsucB1yW_aynSBgeXbfkhRpbD60g/viewform?embedded=true"
+      width="100%"
+      height="800"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+    >
+      Loading…
+    </iframe>
+
+    <!-- Admin Login -->
+    <div class="card">
+      <h2>Admin Login</h2>
+      <form id="adminSection">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Feedback List Section (after login) -->
+    <div id="feedbackList" class="card" style="display:none;">
+      <h3>All Feedback</h3>
+      <p><em>You can view Google Form responses in your Google Drive ➝ Responses tab.</em></p>
+      <a href="https://docs.google.com/forms/d/1FAIpQLSc-ePwtOkgU-XNo1_V72ppsucB1yW_aynSBgeXbfkhRpbD60g/viewanalytics" target="_blank">
+        📊 View Form Responses
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
